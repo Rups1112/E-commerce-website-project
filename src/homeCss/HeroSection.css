@@ -1,0 +1,73 @@
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #f6f5f2;
+  min-height: 90vh;
+}
+
+/* Left Content */
+.hero-content {
+  max-width: 50%;
+  margin-left: 80px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 1.2;
+  color: #000;
+  margin-bottom: 16px;
+}
+
+.hero p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 24px;
+  max-width: 400px;
+}
+
+/* Shop Now Button */
+.shop-btn {
+  background-color: #000;
+  color: #fff;
+  padding: 12px 24px;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.shop-btn:hover {
+  background-color: #444;
+}
+
+/* Hero Image */
+.hero-image img {
+  max-width: 700px;
+  height: 500px;
+  margin-right: 30px;
+}
+
+/* Statistics Section */
+.hero-stats {
+  display: flex;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.stat h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #000;
+}
+
+.stat p {
+  font-size: 14px;
+  color: #666;
+  margin-top: 5px;
+}
