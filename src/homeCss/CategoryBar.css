@@ -2,10 +2,12 @@
     display: flex;
     justify-content: center;
     gap: 80px;
-    background: white;
+    background: rgb(59, 164, 188);
     padding: 15px 20px;
     border-bottom: 1px solid #ddd;
-    margin-top: 30px;
+    margin-top: 70px;
+   
+    
   }
   
   .category-item {

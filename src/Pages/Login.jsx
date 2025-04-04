@@ -29,10 +29,13 @@ const Login = () => {
       return;
     }
 
-    // Clear errors & Proceed with authentication (Mock console log for now)
+    // Clear errors & Proceed with authentication (Mock login)
     setErrors("");
     console.log("Logging in with:", formData);
     alert("Login Successful!");
+
+    // Redirect to Home Page after login
+    navigate("/home"); 
   };
 
   return (

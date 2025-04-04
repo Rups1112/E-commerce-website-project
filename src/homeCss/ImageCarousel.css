@@ -2,12 +2,13 @@
 
 .carousel-container {
   width: 100%;
-  max-width: 1200px; /* Adjust max width to prevent overflow */
-  height: auto;
+  max-width: 99vw; /* Adjust max width to prevent overflow */
+  height: 400px;
   margin: 0 auto; /* Center it properly */
   overflow: hidden;
   display: flex;
   justify-content: center;
+ 
 }
 
 /* Make sure images are properly sized */
@@ -15,7 +16,7 @@
   width: 100%;
   max-width: 100%;
   height: 500px; /* Default height */
-  object-fit: cover;
+  object-fit: fill;
 }
 
 /* Swiper Navigation and Pagination Styling */

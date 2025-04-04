@@ -1,20 +1,15 @@
 import { useState } from "react";
 import { FaUser, FaHeart, FaShoppingBag, FaSearch } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
-import  "../homeCss/Navbar.css";
+import "../homeCss/Navbar.css";
 
 export default function Navbar() {
   const navigate = useNavigate();
-  
+
   return (
     <>
-      {/* Top Banner */}
-      <div className="top-bar" onClick={() => navigate("/sign-up")}>
-        <p>Sign up & get 10% off on your first order!</p>
-      </div>
-      
-      {/* Main Navbar */}
       <nav className="navbar">
+        {/* Main Navbar */}
         <div className="navbar-container">
           {/* Logo */}
           <div className="logo" onClick={() => navigate("/")}>SHOP.CO</div>

@@ -5,25 +5,15 @@
   box-sizing: border-box;
 }
 
-/* Top Black Bar */
-.top-bar {
-  background-color: black;
-  color: white;
-  text-align: center;
-  padding: 10px;
-  font-size: 14px;
-  cursor: pointer;
-}
-
 /* Navbar Container */
 .navbar {
-  background-color: white;
+  background-color: rgb(211, 228, 220);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  padding: 10px 20px;
+  padding: 10px;
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100vw;
   z-index: 1000;
 }
 

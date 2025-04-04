@@ -1,83 +1,133 @@
-/* Login.css */
+/* Center Login Box */
 .login-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    width: 98vw;
-    background-color: #f3f4f6;
-  }
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100vw;
+  background-color: #f3f4f6;
+  padding: 20px;
+}
+
+/* Login Box */
+.login-box {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+/* Login Title */
+.login-title {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Login Form */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: left;
+}
+
+/* Labels */
+.login-label {
+  font-weight: 600;
+  display: block;
+  color: #444;
+}
+
+/* Input Fields */
+.login-input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: border 0.3s ease;
+}
+
+/* Input Focus Effect */
+.login-input:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Login Button */
+.login-button {
+  width: 100%;
+  background-color: black;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.login-button:hover {
+  background-color: #333;
+}
+
+/* Error Message */
+.login-error {
+  color: red;
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* Login Links (Forgot Password & Signup) */
+.login-links {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Clickable Links */
+.login-link {
+  color: #007bff;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.login-link:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 480px) {
   .login-box {
-    background: white;
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 400px;
-    text-align: center;
+      padding: 1.5rem;
   }
-  
+
   .login-title {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 20px;
+      font-size: 22px;
   }
-  
-  .login-form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-  }
-  
-  .login-label {
-    font-weight: 600;
-    text-align: left;
-    display: block;
-  }
-  
+
   .login-input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
+      font-size: 14px;
+      padding: 10px;
   }
-  
+
   .login-button {
-    width: 100%;
-    background-color: black;
-    color: white;
-    padding: 12px;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
+      font-size: 14px;
+      padding: 10px;
   }
-  
-  .login-button:hover {
-    background-color: #333;
-  }
-  
-  .login-error {
-    color: red;
-    font-size: 14px;
-  }
-  
-  .login-links {
-    margin-top: 15px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  
+
   .login-link {
-    color: #007bff;
-    cursor: pointer;
-    font-size: 14px;
+      font-size: 13px;
   }
-  
-  .login-link:hover {
-    text-decoration: underline;
-  }
-  
+}

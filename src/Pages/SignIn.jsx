@@ -1,7 +1,10 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom"; // Import useNavigate
 import "../Pages/SignIn.css"; // Import the CSS file
 
 const SignUp = () => {
+  const navigate = useNavigate(); // Initialize navigation
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -39,6 +42,11 @@ const SignUp = () => {
       setSuccess("Registration Successful!");
       setErrors({});
       console.log("User Data:", formData);
+
+      // Redirect to login page after 2 seconds
+      setTimeout(() => {
+        navigate("/login");
+      }, 2000);
     } else {
       setErrors(newErrors);
       setSuccess("");
@@ -121,6 +129,14 @@ const SignUp = () => {
           <button type="submit" className="signup-button">
             Register
           </button>
+
+          {/* Already a user? Redirect to login page */}
+          <p className="signup-login-link">
+            Already a user?{" "}
+            <span onClick={() => navigate("/login")} className="signup-login-text">
+            Login here 
+            </span>
+          </p>
         </form>
       </div>
     </div>
