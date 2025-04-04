@@ -35,7 +35,7 @@ const Login = () => {
     alert("Login Successful!");
 
     // Redirect to Home Page after login
-    navigate("/home"); 
+    navigate("/"); 
   };
 
   return (
