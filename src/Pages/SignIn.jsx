@@ -1,14 +1,15 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom"; // Import useNavigate
 import "../Pages/SignIn.css"; // Import the CSS file
+import { registerUser } from "../Apis/userApi.api";
 
 const SignUp = () => {
   const navigate = useNavigate(); // Initialize navigation
 
   const [formData, setFormData] = useState({
-    name: "",
+    fullName: "",
     email: "",
-    contact: "",
+    contactNo: "",
     address: "",
     password: "",
   });
@@ -24,9 +25,9 @@ const SignUp = () => {
   // Validate Form
   const validateForm = () => {
     let newErrors = {};
-    if (!formData.name) newErrors.name = "Name is required";
+    if (!formData.fullName) newErrors.fullName = "Name is required";
     if (!formData.email.includes("@")) newErrors.email = "Invalid email";
-    if (formData.contact.length < 10) newErrors.contact = "Invalid contact number";
+    if (formData.contactNo.length < 10) newErrors.contactNo = "Invalid contact number";
     if (!formData.address) newErrors.address = "Address is required";
     if (formData.password.length < 6) newErrors.password = "Password must be at least 6 characters";
 
@@ -34,14 +35,16 @@ const SignUp = () => {
   };
 
   // Handle Form Submit
-  const handleSubmit = (e) => {
+  const handleSubmit =async (e) => {
     e.preventDefault();
     const newErrors = validateForm();
     
     if (Object.keys(newErrors).length === 0) {
+      const response = await registerUser(formData);
+      console.log(response.data);
       setSuccess("Registration Successful!");
       setErrors({});
-      console.log("User Data:", formData);
+      // console.log("User Data:", formData);
 
       // Redirect to login page after 2 seconds
       setTimeout(() => {
@@ -65,13 +68,13 @@ const SignUp = () => {
             <label className="signup-label">Name</label>
             <input 
               type="text" 
-              name="name" 
+              name="fullName" 
               className="signup-input" 
-              value={formData.name} 
+              value={formData.fullName} 
               onChange={handleChange} 
               placeholder="Enter your name"
             />
-            {errors.name && <p className="signup-error">{errors.name}</p>}
+            {errors.fullName && <p className="signup-error">{errors.fullName}</p>}
           </div>
 
           <div>
@@ -91,13 +94,13 @@ const SignUp = () => {
             <label className="signup-label">Contact</label>
             <input 
               type="text" 
-              name="contact" 
+              name="contactNo" 
               className="signup-input" 
-              value={formData.contact} 
+              value={formData.contactNo} 
               onChange={handleChange} 
               placeholder="Enter your contact number"
             />
-            {errors.contact && <p className="signup-error">{errors.contact}</p>}
+            {errors.contactNo && <p className="signup-error">{errors.contactNo}</p>}
           </div>
 
           <div>
