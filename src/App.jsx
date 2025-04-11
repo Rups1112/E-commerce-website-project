@@ -12,6 +12,7 @@ import SignUp from "../src/Pages/SignIn";
 import Login from "../src/Pages/Login";
 import ResetPassword from "../src/Pages/RestPassword";
 import CategoryBar from "./Home/CategoryBar";
+import KilosPage from "../src/CategoryProductPages/KilosPage";
 
 export default function App() {
   return (
@@ -33,6 +34,8 @@ export default function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/reset-password" element={<ResetPassword />} />
         <Route path="/sign-up" element={<SignUp />} />
+      
+        <Route path="/category/kilos" element={<KilosPage />} />
       </Routes>
     </Router>
   );
