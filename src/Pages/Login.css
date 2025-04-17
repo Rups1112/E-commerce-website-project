@@ -1,133 +1,113 @@
-/* Center Login Box */
+/* Login.css */
 .login-container {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  width: 100vw;
-  background-color: #f3f4f6;
-  padding: 20px;
+  width: 98vw;
+  /background-color: #84a6eb;/
+  background: #C04848;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #480048, #C04848);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #480048, #C04848); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: white;
 }
 
-/* Login Box */
 .login-box {
   background: white;
   padding: 2rem;
-  border-radius: 10px;
+  border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   width: 100%;
   max-width: 400px;
   text-align: center;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
 }
 
-/* Login Title */
 .login-title {
-  font-size: 26px;
-  font-weight: bold;
+  font-size: 30px;
+  font-weight: bolder;
   margin-bottom: 20px;
-  color: #333;
+  color: black;
 }
 
-/* Login Form */
 .login-form {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  text-align: left;
 }
 
-/* Labels */
 .login-label {
   font-weight: 600;
+  text-align: left;
   display: block;
-  color: #444;
+  color: black;
 }
 
-/* Input Fields */
 .login-input {
   width: 100%;
-  padding: 12px;
+  padding: 10px;
+  color: black;
+  background-color: white;
   border: 1px solid #ccc;
-  border-radius: 6px;
+  border-radius: 5px;
   font-size: 16px;
-  transition: border 0.3s ease;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
 }
 
-/* Input Focus Effect */
-.login-input:focus {
-  border-color: #007bff;
-  outline: none;
-  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
-}
-
-/* Login Button */
 .login-button {
-  width: 100%;
-  background-color: black;
+  width: 60%;
+   background: #D38312;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #A83279, #D38312);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #A83279, #D38312); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: white;
   padding: 12px;
   border: none;
-  border-radius: 6px;
+  border-radius: 5px;
   font-size: 16px;
-  font-weight: bold;
+  margin-top: 10px;
   cursor: pointer;
-  transition: background 0.3s ease;
+  margin-left: 20%;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
 }
 
 .login-button:hover {
-  background-color: #333;
+  background: #db5107;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #380d27, #7a4b09);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #4d0c33, #684007); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+color: white;
 }
 
-/* Error Message */
 .login-error {
   color: red;
   font-size: 14px;
-  text-align: center;
-  margin-bottom: 10px;
 }
 
-/* Login Links (Forgot Password & Signup) */
 .login-links {
   margin-top: 15px;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 5px;
 }
 
-/* Clickable Links */
 .login-link {
-  color: #007bff;
+  color: #3c7abc;
   cursor: pointer;
-  font-size: 14px;
-  font-weight: 500;
-  text-align: center;
+  font-weight: bolder;
+  font-size: 0.8rem;
 }
 
 .login-link:hover {
   text-decoration: underline;
 }
-
-/* Responsive Styles */
-@media (max-width: 480px) {
-  .login-box {
-      padding: 1.5rem;
-  }
-
-  .login-title {
-      font-size: 22px;
-  }
-
-  .login-input {
-      font-size: 14px;
-      padding: 10px;
-  }
-
-  .login-button {
-      font-size: 14px;
-      padding: 10px;
-  }
-
-  .login-link {
-      font-size: 13px;
-  }
+.signup-login-text {
+  cursor: pointer;
 }

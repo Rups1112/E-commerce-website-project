@@ -13,6 +13,10 @@
   border-radius: 12px;
   margin: 20px auto;
   max-width: 1000px;
+  -webkit-border-radius:;
+  -moz-border-radius:;
+  -ms-border-radius:;
+  -o-border-radius:;
 }
 
 .footer-newsletter h2 {
@@ -29,6 +33,10 @@
   border-radius: 30px;
   margin: 0 auto;
   width: 400px;
+  -webkit-border-radius:;
+  -moz-border-radius:;
+  -ms-border-radius:;
+  -o-border-radius:;
 }
 
 .newsletter-input .icon {
@@ -41,6 +49,7 @@
   outline: none;
   width: 100%;
   font-size: 14px;
+  background-color: white;
 }
 
 .subscribe-btn {

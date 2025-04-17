@@ -5,6 +5,23 @@
   box-sizing: border-box;
 }
 
+#k {
+  color: rgb(127, 51, 10);
+  font-size: large;
+  font-family: "Playwrite CU", cursive;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+#kart {
+  font-size: large;
+  font-family: "Playwrite CU", cursive;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  color: rgb(16, 76, 76);
+}
 /* Navbar Container */
 .navbar {
   background-color: rgb(211, 228, 220);
@@ -27,10 +44,14 @@
 
 /* Logo */
 .logo {
-  font-size: 24px;
-  font-weight: bold;
   color: #ff3e6c;
   cursor: pointer;
+  font-size: large;
+  font-family: "Playwrite CU", cursive;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+
 }
 
 /* Desktop Menu */
@@ -43,7 +64,12 @@
 
 .menu li {
   cursor: pointer;
+  color: green;
   transition: color 0.3s ease;
+  -webkit-transition: color 0.3s ease;
+  -moz-transition: color 0.3s ease;
+  -ms-transition: color 0.3s ease;
+  -o-transition: color 0.3s ease;
 }
 
 .menu li:hover {
@@ -58,6 +84,10 @@
   padding: 8px 12px;
   border-radius: 5px;
   width: 300px;
+  -webkit-border-radius:;
+  -moz-border-radius:;
+  -ms-border-radius:;
+  -o-border-radius:;
 }
 
 .search-bar input {
@@ -88,6 +118,7 @@
   align-items: center;
   font-size: 14px;
   cursor: pointer;
+  color: black;
 }
 
 .icon-item svg {
@@ -127,4 +158,59 @@
   .search-bar {
     width: 80%;
   }
+}
+
+.account-dropdown {
+  position: absolute;
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid #ccc;
+  display: none;
+}
+
+.icon-item:hover .account-dropdown {
+  display: block;
+}
+
+.account-dropdown li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.account-dropdown li:hover {
+  background-color: #f0f0f0;
+}
+
+
+.account-info {
+ min-width: 400px;
+ text-align: left;
+  position: absolute;
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid #ccc;
+  top: 40px;
+  right: 0;
+  padding-left: 5%;
+}
+
+.account-info p {
+  margin-bottom: 10px;
+  color: black;
+  font-weight: bold;
+}
+
+.account-info button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-left: 15%;
+}
+.account-info h1{
+  color: black;
+  font-size: 2rem;
+  margin: 20px;
 }

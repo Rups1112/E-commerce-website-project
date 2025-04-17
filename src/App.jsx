@@ -8,11 +8,12 @@ import TopSelling from "./Home/TopSelling";
 import DressStyles from "./Home/DressStyles";
 import Testimonials from "./Home/Testimonials";
 import Footer from "./Home/Footer";
-import SignUp from "../src/Pages/SignIn"; 
+import SignUp from "../src/Pages/SignIn";
 import Login from "../src/Pages/Login";
 import ResetPassword from "../src/Pages/RestPassword";
 import CategoryBar from "./Home/CategoryBar";
 import KilosPage from "../src/CategoryProductPages/KilosPage";
+import SignUpForSeller from "../src/Pages/Signup";
 
 export default function App() {
   return (
@@ -34,7 +35,7 @@ export default function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/reset-password" element={<ResetPassword />} />
         <Route path="/sign-up" element={<SignUp />} />
-      
+        <Route path="/SignUpForSeller" element={<SignUpForSeller />} />
         <Route path="/category/kilos" element={<KilosPage />} />
       </Routes>
     </Router>
